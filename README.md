@@ -1,6 +1,6 @@
 # ScrubAnimator
 
-MIT-LICENSE
+MIT License
 
 # About
 ScrubAnimator is a KeyFrame animation library, written in Swift, for iOS, currently supporting animation of CGRect and cornerRadius.
