@@ -67,7 +67,7 @@ depends-member:
 - ["C13ScrubAnimator8Animator", "UIView"]
 - ["C13ScrubAnimator8Animator", "Void"]
 - !private ["C13ScrubAnimator8Animator", "abs"]
-- ["C13ScrubAnimator8Animator", "addKeyframe"]
+- ["C13ScrubAnimator8Animator", "add"]
 - ["C13ScrubAnimator8Animator", "animate"]
 - !private ["C13ScrubAnimator8Animator", "animateKeyFrame"]
 - ["C13ScrubAnimator8Animator", "beginResult"]
@@ -479,8 +479,7 @@ depends-member:
 - ["CSo8NSObject", "UIView"]
 - ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "abs"]
-- !private ["CSo8NSObject", "add"]
-- ["CSo8NSObject", "addKeyframe"]
+- ["CSo8NSObject", "add"]
 - ["CSo8NSObject", "animate"]
 - ["CSo8NSObject", "animateKeyFrame"]
 - ["CSo8NSObject", "beginResult"]
@@ -828,4 +827,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "cfee50c5b7ba337c4430bbda8041de76"
+interface-hash: "12cf72011e1ec900763f13aed9d66ca1"

@@ -49,6 +49,7 @@ depends-top-level:
 - "UIView"
 - "Void"
 - !private "abs"
+- !private "changed"
 - !private "fatalError"
 - !private "kCAMediaTimingFunctionEaseInEaseOut"
 - !private "print"
@@ -67,10 +68,11 @@ depends-member:
 - ["C13ScrubAnimator8Animator", "UIView"]
 - ["C13ScrubAnimator8Animator", "Void"]
 - !private ["C13ScrubAnimator8Animator", "abs"]
-- ["C13ScrubAnimator8Animator", "addKeyframe"]
+- ["C13ScrubAnimator8Animator", "add"]
 - ["C13ScrubAnimator8Animator", "animate"]
 - !private ["C13ScrubAnimator8Animator", "animateKeyFrame"]
 - ["C13ScrubAnimator8Animator", "beginResult"]
+- !private ["C13ScrubAnimator8Animator", "changed"]
 - ["C13ScrubAnimator8Animator", "cornerRadiusView"]
 - ["C13ScrubAnimator8Animator", "currentScrub"]
 - ["C13ScrubAnimator8Animator", "deinit"]
@@ -107,6 +109,7 @@ depends-member:
 - !private ["Ps9AnyObject", "add"]
 - !private ["Ps9AnyObject", "animate"]
 - !private ["Ps9AnyObject", "animateKeyFrame"]
+- !private ["Ps9AnyObject", "changed"]
 - !private ["Ps9AnyObject", "cornerRadius"]
 - !private ["Ps9AnyObject", "cornerRadiusView"]
 - !private ["Ps9AnyObject", "currentScrub"]
@@ -195,6 +198,7 @@ depends-member:
 - !private ["Ps7CVarArg", "animate"]
 - !private ["Ps7CVarArg", "animateKeyFrame"]
 - !private ["Ps7CVarArg", "append"]
+- !private ["Ps7CVarArg", "changed"]
 - !private ["Ps7CVarArg", "cornerRadius"]
 - !private ["Ps7CVarArg", "cornerRadiusView"]
 - !private ["Ps7CVarArg", "count"]
@@ -240,6 +244,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "animate"]
 - !private ["Ps28CustomDebugStringConvertible", "animateKeyFrame"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "changed"]
 - !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
 - !private ["Ps28CustomDebugStringConvertible", "cornerRadiusView"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
@@ -308,6 +313,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "animate"]
 - !private ["Ps23CustomStringConvertible", "animateKeyFrame"]
 - !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "changed"]
 - !private ["Ps23CustomStringConvertible", "cornerRadius"]
 - !private ["Ps23CustomStringConvertible", "cornerRadiusView"]
 - !private ["Ps23CustomStringConvertible", "count"]
@@ -356,6 +362,7 @@ depends-member:
 - !private ["Ps9Equatable", "add"]
 - !private ["Ps9Equatable", "animate"]
 - !private ["Ps9Equatable", "animateKeyFrame"]
+- !private ["Ps9Equatable", "changed"]
 - !private ["Ps9Equatable", "cornerRadius"]
 - !private ["Ps9Equatable", "cornerRadiusView"]
 - !private ["Ps9Equatable", "currentScrub"]
@@ -415,6 +422,7 @@ depends-member:
 - !private ["Ps8Hashable", "add"]
 - !private ["Ps8Hashable", "animate"]
 - !private ["Ps8Hashable", "animateKeyFrame"]
+- !private ["Ps8Hashable", "changed"]
 - !private ["Ps8Hashable", "cornerRadius"]
 - !private ["Ps8Hashable", "cornerRadiusView"]
 - !private ["Ps8Hashable", "currentScrub"]
@@ -479,11 +487,11 @@ depends-member:
 - ["CSo8NSObject", "UIView"]
 - ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "abs"]
-- !private ["CSo8NSObject", "add"]
-- ["CSo8NSObject", "addKeyframe"]
+- ["CSo8NSObject", "add"]
 - ["CSo8NSObject", "animate"]
 - ["CSo8NSObject", "animateKeyFrame"]
 - ["CSo8NSObject", "beginResult"]
+- !private ["CSo8NSObject", "changed"]
 - !private ["CSo8NSObject", "cornerRadius"]
 - ["CSo8NSObject", "cornerRadiusView"]
 - ["CSo8NSObject", "currentScrub"]
@@ -521,6 +529,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "add"]
 - !private ["PSo16NSObjectProtocol", "animate"]
 - !private ["PSo16NSObjectProtocol", "animateKeyFrame"]
+- !private ["PSo16NSObjectProtocol", "changed"]
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - !private ["PSo16NSObjectProtocol", "cornerRadiusView"]
 - !private ["PSo16NSObjectProtocol", "currentScrub"]
@@ -634,6 +643,7 @@ depends-member:
 - !private ["Ps9_Hashable", "add"]
 - !private ["Ps9_Hashable", "animate"]
 - !private ["Ps9_Hashable", "animateKeyFrame"]
+- !private ["Ps9_Hashable", "changed"]
 - !private ["Ps9_Hashable", "cornerRadius"]
 - !private ["Ps9_Hashable", "cornerRadiusView"]
 - !private ["Ps9_Hashable", "currentScrub"]
@@ -828,4 +838,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-interface-hash: "cfee50c5b7ba337c4430bbda8041de76"
+interface-hash: "12cf72011e1ec900763f13aed9d66ca1"

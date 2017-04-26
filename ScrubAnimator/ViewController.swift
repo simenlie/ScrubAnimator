@@ -39,10 +39,10 @@ class ViewController: UIViewController {
         
         animator.cornerRadiusView = self.outerView
         
-        animator.addKeyframe(percentage: 0, frame: frame1, cornerRadius: frame1.size.width/2)
-        animator.addKeyframe(percentage: 0.3, frame: frame2, cornerRadius: frame2.size.width/2)
-        animator.addKeyframe(percentage: 0.9, frame: frame1, cornerRadius: frame1.size.width/2)
-        animator.addKeyframe(percentage: 1, frame: frame3, cornerRadius: frame3.size.width/2)
+        animator.add(keyFrame: 0, frame: frame1, cornerRadius: frame1.size.width/2)
+        animator.add(keyFrame: 0.3, frame: frame2, cornerRadius: frame2.size.width/2)
+        animator.add(keyFrame: 0.9, frame: frame1, cornerRadius: frame1.size.width/2)
+        animator.add(keyFrame: 1, frame: frame3, cornerRadius: frame3.size.width/2)
         
         slider.minimumValue = 0
         slider.maximumValue = 1
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func sliderValueChanged(_ sender: Any) {
-        let result = animator.scrubAnimation(keyFrame: CGFloat(slider.value))
+        let result = animator.scrubTo(keyFrame: CGFloat(slider.value))
         self.outerView.frame = result.frame
         self.outerView.layer.cornerRadius = result.cornerRadius
     }
@@ -59,7 +59,7 @@ class ViewController: UIViewController {
     @IBAction func animationTap(_ sender: Any) {
         let backwards = animator.currentScrub == 1
         animator.animate(direction: backwards ? .backward : .forward,
-                         changed: {(result : AnimatorResult) in
+                         animations: {(result : AnimatorResult) in
                             self.outerView.frame = result.frame
                             self.slider.value = Float(self.animator.currentScrub)
         })

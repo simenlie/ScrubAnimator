@@ -55,22 +55,22 @@ class Animator: NSObject {
         return TimeInterval(self.duration * (1 - currentScrub))
     }
     
-    func addKeyframe(percentage : CGFloat, frame : CGRect, cornerRadius : CGFloat? = nil)
+    func add(keyFrame : CGFloat, frame : CGRect, cornerRadius : CGFloat? = nil)
     {
-        valuesKV[percentage] = AnimatorResult(frame: frame, cornerRadius: cornerRadius ?? 0)
-        percentageSorted.append(percentage)
+        valuesKV[keyFrame] = AnimatorResult(frame: frame, cornerRadius: cornerRadius ?? 0)
+        percentageSorted.append(keyFrame)
     }
     
-    func animate(direction: Direction, changed : @escaping ((AnimatorResult) -> Void))
+    func animate(direction: Direction, animations : @escaping ((AnimatorResult) -> Void))
     {
-        animate(direction: direction, once: false, changed: changed)
+        animate(direction: direction, once: false, changed: animations)
     }
     
     func step(direction : Direction, changed : @escaping ((AnimatorResult) -> Void)){
         animate(direction: direction, once: true, changed: changed)
     }
     
-    func scrubAnimation(keyFrame : CGFloat) -> AnimatorResult
+    func scrubTo(keyFrame : CGFloat) -> AnimatorResult
     {
         currentScrub = keyFrame
         //Takes the values in the keyframes, and animates it from there
@@ -160,7 +160,7 @@ class Animator: NSObject {
         }
         
         let calc = (value - previous) * duration
-        let result = scrubAnimation(keyFrame: value)
+        let result = scrubTo(keyFrame: value)
         let duration2 = TimeInterval(abs(calc))
         print("Stuff: ", calc, value, previous)
         

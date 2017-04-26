@@ -28,17 +28,15 @@ depends-top-level:
 - !private "CGFloat"
 - !private "CGRect"
 - !private "Float"
-- !private "StringLiteralType"
 - "TernaryPrecedence"
 - "UIButton"
 - "UISlider"
 - "UIView"
 - "UIViewController"
 - "ViewController"
-- !private "print"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
-- !private ["C13ScrubAnimator8Animator", "addKeyframe"]
+- !private ["C13ScrubAnimator8Animator", "add"]
 - !private ["C13ScrubAnimator8Animator", "animate"]
 - !private ["C13ScrubAnimator8Animator", "cornerRadiusView"]
 - !private ["C13ScrubAnimator8Animator", "currentScrub"]
@@ -51,7 +49,7 @@ depends-member:
 - !private ["Ps9AnyObject", "CGFloat"]
 - !private ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "Float"]
-- !private ["Ps9AnyObject", "addKeyframe"]
+- !private ["Ps9AnyObject", "add"]
 - !private ["Ps9AnyObject", "animate"]
 - !private ["Ps9AnyObject", "animator"]
 - !private ["Ps9AnyObject", "cornerRadius"]
@@ -64,7 +62,6 @@ depends-member:
 - !private ["Ps9AnyObject", "maximumValue"]
 - !private ["Ps9AnyObject", "minimumValue"]
 - !private ["Ps9AnyObject", "outerView"]
-- !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "scrubAnimation"]
 - !private ["Ps9AnyObject", "slider"]
 - !private ["Ps9AnyObject", "step"]
@@ -90,7 +87,7 @@ depends-member:
 - !private ["Ps7CVarArg", "CGFloat"]
 - !private ["Ps7CVarArg", "CGRect"]
 - !private ["Ps7CVarArg", "Float"]
-- !private ["Ps7CVarArg", "addKeyframe"]
+- !private ["Ps7CVarArg", "add"]
 - !private ["Ps7CVarArg", "animate"]
 - !private ["Ps7CVarArg", "animator"]
 - !private ["Ps7CVarArg", "cornerRadius"]
@@ -103,7 +100,6 @@ depends-member:
 - !private ["Ps7CVarArg", "maximumValue"]
 - !private ["Ps7CVarArg", "minimumValue"]
 - !private ["Ps7CVarArg", "outerView"]
-- !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "scrubAnimation"]
 - !private ["Ps7CVarArg", "slider"]
 - !private ["Ps7CVarArg", "step"]
@@ -116,7 +112,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
 - !private ["Ps28CustomDebugStringConvertible", "CGRect"]
 - !private ["Ps28CustomDebugStringConvertible", "Float"]
-- !private ["Ps28CustomDebugStringConvertible", "addKeyframe"]
+- !private ["Ps28CustomDebugStringConvertible", "add"]
 - !private ["Ps28CustomDebugStringConvertible", "animate"]
 - !private ["Ps28CustomDebugStringConvertible", "animator"]
 - !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
@@ -130,7 +126,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "maximumValue"]
 - !private ["Ps28CustomDebugStringConvertible", "minimumValue"]
 - !private ["Ps28CustomDebugStringConvertible", "outerView"]
-- !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "scrubAnimation"]
 - !private ["Ps28CustomDebugStringConvertible", "size"]
 - !private ["Ps28CustomDebugStringConvertible", "slider"]
@@ -155,7 +150,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "CGRect"]
 - !private ["Ps23CustomStringConvertible", "Float"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps23CustomStringConvertible", "addKeyframe"]
+- !private ["Ps23CustomStringConvertible", "add"]
 - !private ["Ps23CustomStringConvertible", "animate"]
 - !private ["Ps23CustomStringConvertible", "animator"]
 - !private ["Ps23CustomStringConvertible", "cornerRadius"]
@@ -168,7 +163,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "maximumValue"]
 - !private ["Ps23CustomStringConvertible", "minimumValue"]
 - !private ["Ps23CustomStringConvertible", "outerView"]
-- !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "scrubAnimation"]
 - !private ["Ps23CustomStringConvertible", "slider"]
 - !private ["Ps23CustomStringConvertible", "step"]
@@ -183,7 +177,7 @@ depends-member:
 - !private ["Ps9Equatable", "CGRect"]
 - !private ["Ps9Equatable", "Float"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
-- !private ["Ps9Equatable", "addKeyframe"]
+- !private ["Ps9Equatable", "add"]
 - !private ["Ps9Equatable", "animate"]
 - !private ["Ps9Equatable", "animator"]
 - !private ["Ps9Equatable", "backward"]
@@ -199,7 +193,6 @@ depends-member:
 - !private ["Ps9Equatable", "maximumValue"]
 - !private ["Ps9Equatable", "minimumValue"]
 - !private ["Ps9Equatable", "outerView"]
-- !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "scrubAnimation"]
 - !private ["Ps9Equatable", "size"]
 - !private ["Ps9Equatable", "slider"]
@@ -210,11 +203,8 @@ depends-member:
 - !private ["Ps9Equatable", "width"]
 - ["Ps9Equatable", ""]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps25ExpressibleByFloatLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
-- !private ["Ps26ExpressibleByStringLiteral", "init"]
-- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Sf", "init"]
 - !private ["Ps13FloatingPoint", "init"]
 - ["Ps8Hashable", "Animator"]
@@ -222,7 +212,7 @@ depends-member:
 - !private ["Ps8Hashable", "CGRect"]
 - !private ["Ps8Hashable", "Float"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
-- !private ["Ps8Hashable", "addKeyframe"]
+- !private ["Ps8Hashable", "add"]
 - !private ["Ps8Hashable", "animate"]
 - !private ["Ps8Hashable", "animator"]
 - !private ["Ps8Hashable", "backward"]
@@ -237,7 +227,6 @@ depends-member:
 - !private ["Ps8Hashable", "maximumValue"]
 - !private ["Ps8Hashable", "minimumValue"]
 - !private ["Ps8Hashable", "outerView"]
-- !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "scrubAnimation"]
 - !private ["Ps8Hashable", "slider"]
 - !private ["Ps8Hashable", "step"]
@@ -247,7 +236,6 @@ depends-member:
 - ["Ps8Hashable", ""]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
-- !private ["Ps10MirrorPath", "init"]
 - ["PSo8NSCoding", "Animator"]
 - !private ["PSo8NSCoding", "CGFloat"]
 - !private ["PSo8NSCoding", "CGRect"]
@@ -261,13 +249,11 @@ depends-member:
 - !private ["PSo8NSCoding", "maximumValue"]
 - !private ["PSo8NSCoding", "minimumValue"]
 - !private ["PSo8NSCoding", "outerView"]
-- !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "slider"]
 - !private ["PSo8NSCoding", "value"]
 - !private ["PSo8NSCoding", "view"]
 - !private ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "init"]
 - ["PSo26NSExtensionRequestHandling", "Animator"]
 - !private ["PSo26NSExtensionRequestHandling", "CGFloat"]
 - !private ["PSo26NSExtensionRequestHandling", "CGRect"]
@@ -276,12 +262,10 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "outerView"]
-- !private ["PSo26NSExtensionRequestHandling", "print"]
 - !private ["PSo26NSExtensionRequestHandling", "slider"]
 - !private ["PSo26NSExtensionRequestHandling", "view"]
 - !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
-- !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Animator"]
 - !private ["CSo8NSObject", "AnimatorResult"]
 - !private ["CSo8NSObject", "CGFloat"]
@@ -290,7 +274,7 @@ depends-member:
 - ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UISlider"]
 - ["CSo8NSObject", "UIView"]
-- !private ["CSo8NSObject", "addKeyframe"]
+- !private ["CSo8NSObject", "add"]
 - !private ["CSo8NSObject", "animate"]
 - ["CSo8NSObject", "animationBtn"]
 - ["CSo8NSObject", "animationTap"]
@@ -308,7 +292,6 @@ depends-member:
 - ["CSo8NSObject", "nextTap"]
 - ["CSo8NSObject", "outerView"]
 - ["CSo8NSObject", "previousTap"]
-- !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "scrubAnimation"]
 - ["CSo8NSObject", "slider"]
 - ["CSo8NSObject", "sliderValueChanged"]
@@ -320,7 +303,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "CGFloat"]
 - !private ["PSo16NSObjectProtocol", "CGRect"]
 - !private ["PSo16NSObjectProtocol", "Float"]
-- !private ["PSo16NSObjectProtocol", "addKeyframe"]
+- !private ["PSo16NSObjectProtocol", "add"]
 - !private ["PSo16NSObjectProtocol", "animate"]
 - !private ["PSo16NSObjectProtocol", "animator"]
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
@@ -333,7 +316,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "maximumValue"]
 - !private ["PSo16NSObjectProtocol", "minimumValue"]
 - !private ["PSo16NSObjectProtocol", "outerView"]
-- !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "scrubAnimation"]
 - !private ["PSo16NSObjectProtocol", "slider"]
 - !private ["PSo16NSObjectProtocol", "step"]
@@ -341,13 +323,8 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "view"]
 - !private ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "init"]
-- !private ["CSo8NSString", "init"]
 - !private ["Ps12SignedNumber", "init"]
 - !private ["Ps10Strideable", "init"]
-- !private ["SS", "init"]
-- !private ["Ps16TextOutputStream", "init"]
-- !private ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "maximumValue"]
@@ -370,7 +347,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "maximumValue"]
 - !private ["PSo21UIAppearanceContainer", "minimumValue"]
 - !private ["PSo21UIAppearanceContainer", "outerView"]
-- !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "slider"]
 - !private ["PSo21UIAppearanceContainer", "value"]
 - !private ["PSo21UIAppearanceContainer", "view"]
@@ -384,7 +360,6 @@ depends-member:
 - !private ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "outerView"]
-- !private ["PSo18UIContentContainer", "print"]
 - !private ["PSo18UIContentContainer", "slider"]
 - !private ["PSo18UIContentContainer", "view"]
 - !private ["PSo18UIContentContainer", "viewDidLoad"]
@@ -414,7 +389,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "maximumValue"]
 - !private ["PSo18UIFocusEnvironment", "minimumValue"]
 - !private ["PSo18UIFocusEnvironment", "outerView"]
-- !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "slider"]
 - !private ["PSo18UIFocusEnvironment", "value"]
 - !private ["PSo18UIFocusEnvironment", "view"]
@@ -446,7 +420,6 @@ depends-member:
 - ["CSo11UIResponder", "nextTap"]
 - ["CSo11UIResponder", "outerView"]
 - ["CSo11UIResponder", "previousTap"]
-- !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "slider"]
 - ["CSo11UIResponder", "sliderValueChanged"]
 - !private ["CSo11UIResponder", "value"]
@@ -464,7 +437,6 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "maximumValue"]
 - !private ["PSo30UIResponderStandardEditActions", "minimumValue"]
 - !private ["PSo30UIResponderStandardEditActions", "outerView"]
-- !private ["PSo30UIResponderStandardEditActions", "print"]
 - !private ["PSo30UIResponderStandardEditActions", "slider"]
 - !private ["PSo30UIResponderStandardEditActions", "value"]
 - !private ["PSo30UIResponderStandardEditActions", "view"]
@@ -481,7 +453,6 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "outerView"]
-- !private ["PSo16UIStateRestoring", "print"]
 - !private ["PSo16UIStateRestoring", "slider"]
 - !private ["PSo16UIStateRestoring", "view"]
 - !private ["PSo16UIStateRestoring", "viewDidLoad"]
@@ -498,7 +469,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "maximumValue"]
 - !private ["PSo18UITraitEnvironment", "minimumValue"]
 - !private ["PSo18UITraitEnvironment", "outerView"]
-- !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "slider"]
 - !private ["PSo18UITraitEnvironment", "value"]
 - !private ["PSo18UITraitEnvironment", "view"]
@@ -526,7 +496,6 @@ depends-member:
 - ["CSo16UIViewController", "nextTap"]
 - ["CSo16UIViewController", "outerView"]
 - ["CSo16UIViewController", "previousTap"]
-- !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "slider"]
 - ["CSo16UIViewController", "sliderValueChanged"]
 - !private ["CSo16UIViewController", "view"]
@@ -550,7 +519,6 @@ depends-member:
 - ["C13ScrubAnimator14ViewController", "nextTap"]
 - ["C13ScrubAnimator14ViewController", "outerView"]
 - ["C13ScrubAnimator14ViewController", "previousTap"]
-- !private ["C13ScrubAnimator14ViewController", "print"]
 - ["C13ScrubAnimator14ViewController", "slider"]
 - ["C13ScrubAnimator14ViewController", "sliderValueChanged"]
 - !private ["C13ScrubAnimator14ViewController", "view"]
@@ -563,20 +531,14 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "minimumValue"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "value"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "init"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
-- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
-- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
-- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
-- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
-- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - ["Ps9_Hashable", "Animator"]
 - !private ["Ps9_Hashable", "CGFloat"]
 - !private ["Ps9_Hashable", "CGRect"]
 - !private ["Ps9_Hashable", "Float"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
-- !private ["Ps9_Hashable", "addKeyframe"]
+- !private ["Ps9_Hashable", "add"]
 - !private ["Ps9_Hashable", "animate"]
 - !private ["Ps9_Hashable", "animator"]
 - !private ["Ps9_Hashable", "backward"]
@@ -591,7 +553,6 @@ depends-member:
 - !private ["Ps9_Hashable", "maximumValue"]
 - !private ["Ps9_Hashable", "minimumValue"]
 - !private ["Ps9_Hashable", "outerView"]
-- !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "scrubAnimation"]
 - !private ["Ps9_Hashable", "slider"]
 - !private ["Ps9_Hashable", "step"]
@@ -627,29 +588,18 @@ depends-nominal:
 - !private "O13ScrubAnimator9Direction"
 - "Ps9Equatable"
 - !private "Ps27ExpressibleByBooleanLiteral"
-- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps25ExpressibleByFloatLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- !private "Ps26ExpressibleByStringLiteral"
-- !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - !private "Sf"
 - !private "Ps13FloatingPoint"
 - "Ps8Hashable"
 - !private "Ps25LosslessStringConvertible"
-- !private "Ps10MirrorPath"
 - "PSo8NSCoding"
-- !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
-- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- !private "PSo14NSSecureCoding"
-- !private "CSo8NSString"
 - !private "Ps12SignedNumber"
 - !private "Ps10Strideable"
-- !private "SS"
-- !private "Ps16TextOutputStream"
-- !private "Ps20TextOutputStreamable"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -671,14 +621,8 @@ depends-nominal:
 - !private "Ps22_CVarArgPassedAsDouble"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
-- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps33_ExpressibleByBuiltinFloatLiteral"
 - !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
-- !private "Ps34_ExpressibleByBuiltinStringLiteral"
-- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
-- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
-- !private "Ps33_ExpressibleByStringInterpolation"
-- !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
 - !private "Ps11_Strideable"

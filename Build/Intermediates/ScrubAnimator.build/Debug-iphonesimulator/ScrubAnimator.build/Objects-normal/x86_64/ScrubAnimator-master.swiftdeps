@@ -1,0 +1,7 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
+options: "dfdf2d93cfa942b5e9dc3d2bac9315f8"
+build_time: [546553986, 304652000]
+inputs:
+  "/Users/simenlie/iOS prosjekter/ScrubAnimator/ScrubAnimator/Animator.swift": [546553837, 0]
+  "/Users/simenlie/iOS prosjekter/ScrubAnimator/ScrubAnimator/ViewController.swift": [546553843, 0]
+  "/Users/simenlie/iOS prosjekter/ScrubAnimator/ScrubAnimator/AppDelegate.swift": [546530278, 0]
